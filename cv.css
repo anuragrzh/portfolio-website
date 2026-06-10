@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#home{
+   
+    min-height: 100vh;
+    background-color: black;
+    color: white;   }
+    .available{
+        display: flex;
+        gap: 6px;
+        border: 1px solid whitesmoke;
+        width: 330px;
+        padding: 9px;
+        border-radius: 2px;
+        margin-left: 35px;
+        color: aqua;
+        background-color: black;
+        letter-spacing: 0.4em;
+        font-size: 0.68rem;
+        
+
+        
+       
+    }
+    .available::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: aqua;
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+    margin-top: 3px;
+    
+  }
+  .hero-name{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    margin-left: 55px;
+    color: white;
+    /* animation: pulse 2s ease-in-out infinite; */
+  }
+  #sp{
+    color: aqua;
+  }
+  .hero-title{
+   
+    font-size: 1.4rem;
+   
+    color: whitesmoke;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+  }
+  .hero-desc{
+    font-size: 1.2rem;
+    color: whitesmoke;
+    margin-left: 40px;
+    width: 690px;
+  margin-bottom: 30px;
+    
+     letter-spacing: 0.1em;
+  }
+  .btnproject{
+   
+    padding: 20px 35px;
+    background-color: aqua;
+    color: black;
+    text-decoration: none;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    border-radius: 2px;
+    margin-left: 40px;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  .btncontactt{
+   border: 1px solid whitesmoke;
+   border-radius: 4px;
+    padding: 18px 55px;
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    border-radius: 2px;
+    margin-left: 40px;
+    animation: pulse 2s ease-in-out infinite;
+  }
+.logo{
+   
+    color: aqua;
+    margin-left: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+     text-decoration: none;
+    animation: pulse 2s ease-in-out infinite;
+}
+nav ul{
+    display: flex;
+    
+    list-style-type: none;
+    gap: 20px;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+   
+    
+   
+}
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+   
+
+}
+nav ul li a:hover{
+    color: aqua;   
+}
+.line{
+   display: flex;
+   gap: 70px;
+   margin-left: 850px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 3rem;
+   
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    color: whitesmoke;
+    background-color: black;
+  }
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--muted);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    animation: fadeIn 1s 1s ease both;
+  }
+  .scroll-line {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, aqua, transparent);
+    /* animation: scrollLine 1s ease-in-out infinite; */
+  }
+  @keyframes scrollLine {
+    0%   { transform: scaleY(0); transform-origin: top; }
+    50%  { transform: scaleY(1); transform-origin: top; }
+    51%  { transform: scaleY(1); transform-origin: bottom; }
+    100% { transform: scaleY(0); transform-origin: bottom; }
+  }
+
+  .about{
+    min-height: 100vh;
+
+    background-color: black;
+     color: white;
+     display: flex;
+     gap: 130px;
+     
+    
+       
+  }
+  .left{
+    margin-left: 80px;
+    margin-top: 40px;
+     
+  }
+  .right{
+    margin-top: 10px;
+   margin-left: 80px;
+    width: 690px;
+  }
+  .box{
+   padding: 70px 55px ;
+    background-color: aqua;
+   color: black;
+  }
+  #as{
+    font-size: 11.4rem;
+        font-family: 'Bebas Neue', sans-serif;
+  }
+  .left .box:hover{
+    background-color: aqua;
+    background-image: url('IMG20220506200045.jpg');
+    background-size: cover;
+    background-position: center;
+        color: transparent;
+    border-radius: 5px 5px; 
+        animation: pulse 2s ease-in-out infinite;
+  }
+  .right1,.right2,.right3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px;
+    background-color: black;
+    color: aqua;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+     font-family: 'DM Mono', monospace;
+     font-size: 0.9rem;
+     letter-spacing: 0.1em;
+     padding:35px;
+  }
+  .rightbox{
+    display: flex;
+   
+    gap: 20px;
+    margin-top: 70px;
+  }
+  #head{
+    font-size: 3.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  #head1{
+    font-size: 1.4rem;  
+    color: whitesmoke;
+    width: 690px;
+  
+  }
+  .head3{
+        font-size: 0.98rem;
+        color: aqua;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+
+    }
+    .infinite{
+        font-size: 4rem;
+    }
+    .skills{
+      background-color: black;
+   
+     
+       min-height: 100vh;
+       
+    }
+    #tech{
+      font-size: 3.5rem;
+      font-family: 'Bebas Neue', sans-serif;
+      color: white;
+      text-transform: uppercase;
+      margin-left: 100px;
+    }
+    .hbox{
+    display: flex;
+   flex-wrap: wrap;
+   margin-left: 100px;
+    gap: 50px;
+
+     
+     
+     
+    }
+    .hboxs{
+     
+      background-color: rgb(24, 24, 33); 
+      padding: 30px;
+      height: 350px;
+      width: 400px;            
+                        
+      color: aqua;
+      border-radius: 5px;
+      border: 1px solid rgb(19, 24, 31);
+    }
+    .head4{
+       font-size: 0.98rem;
+        color: aqua;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        margin-left: 100px;
+    }
+    logo{
+       display: block;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    h4{
+      margin-bottom: 1rem;
+      font-style: x-small-caps;
+    }
+    h1{
+      color: white;
+      margin-bottom: 1rem;
+    }
+    .crtbtn{
+      border: 1px solid whitesmoke;
+      border-radius: 4px;
+      color:white;
+      padding: 8px;
+      display: inline-block;
+      margin-bottom: 14px;
+      gap:6px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    .crtbtn:hover{
+      background-color: aqua;
+      color: black;
+      border: 1px solid aqua;
+    }
+    .projects{
+      background-color: black;
+     
+  
+    
+    }
+    .maind{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 100px;
+      margin-left: 100px;
+      margin-top: 50px;
+
+      
+    }
+   
+    .head5{
+      font-size: 0.98rem;
+        color: aqua;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        margin-left: 100px;
+        padding-top: 90px;
+        
+    }
+    .cart{
+
+      width: 480px;
+      height: 700px;
+      border: 1px solid rgb(19, 24, 31);
+      border-radius: 5px;
+      overflow: auto;
+     
+      
+      
+    }
+    .ico{
+      display: inline-block;
+     width: 480px;
+    
+     
+     padding: 200px;
+     
+      background-color: aliceblue;
+      font-size: 3.5rem;
+     
+
+    }
+    .cartt{
+      padding: 40px;
+      color: aqua;
+
+      
+    }
+    .mpro{
+      letter-spacing: 0.3em;
+      font-size: 1rem;
+      font-style: small-caps;
+    }
+    .mpro1{
+      letter-spacing: 0.1em;
+      font-size: 1.rem;
+      word-spacing: 0.1em;
+      margin-bottom: 20px;
+      color: rgb(75, 80, 120);
+    }
+    .cart::-webkit-scrollbar {
+  display: none;        /* Scrollbar icon ko hide karega */
+}
+.cart:hover{
+  border: 1px solid aqua;
+  box-shadow: 0 0 20px aqua;
+  
+}
+
+.education{
+  background-color: black;
+  padding-left:70px;
+}
+.edubox{
+width: 900px;
+border: 1px solid rgba(0, 255, 255, 0.4);
+  margin-left: 300px;
+  margin-top: 60px;
+  padding: 70px;
+  background-color: rgb(24, 24, 33);
+  border-radius: 4px;
+}
+.comp{
+  color: aliceblue;
+  font-size: 1.4rem;
+}
+.techh{
+  font-size: 3.5rem;
+      font-family: 'Bebas Neue', sans-serif;
+      color: white;
+      text-transform: uppercase;
+      margin-left: 340px;
+}
+.btech{
+  color:aqua;
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+.three{
+  display: flex;
+  gap: 18px;
+
+}
+.slash{
+  
+  color:aqua;
+ 
+}
+.sl1{
+  color: rgb(60, 59, 87);
+  letter-spacing: .2rem;
+  
+}
+.head6{
+      font-size: 0.98rem;
+        color: aqua;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        margin-left: 340px;
+        padding-top: 90px;
+        
+    }
+    .comp::after{
+      content: "B.TECH";
+      font-size: 4.9rem;
+      color: azure;
+      margin-left: 131px;
+      margin-top: 71px;
+      opacity: 0.3;
+    }
+    .contact{
+      background-color: black;
+
+    }
+    .work{
+      color: aqua;
+      margin-left: 38%;
+      padding-top: 100px;
+      font-size: 1.2rem;
+      letter-spacing: .2rem;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: .4rem;
+    }
+    .work1{
+      font-size: 3.9rem;
+    line-height: 4.5rem;
+    font-weight: bolder;
+    text-align: center;
+     
+    }
+    .work3{
+color: rgb(60, 59, 87);
+margin-left: 26%;
+font-size: 1.2rem;
+margin-bottom: 40px;
+    }
+    button{
+      color:whitesmoke;
+      background-color: black;
+ border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 10px 15px;
+     margin-left: 4%;
+     border-radius: 5px;
+
+    }
+    .work4{
+      margin-left: 38%;
+    }
+    .build{
+      color: aqua;
+    margin-left: 15px;
+    }
+    button:hover{
+     
+      color: aqua;
+    }
